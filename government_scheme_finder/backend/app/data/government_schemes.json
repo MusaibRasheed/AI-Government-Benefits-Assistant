@@ -1,0 +1,222 @@
+[
+  {
+    "schemeId": "pmjdy",
+    "name": "Pradhan Mantri Jan Dhan Yojana",
+    "description": "Financial inclusion program to provide bank accounts, RuPay cards, and accident insurance for low-income households.",
+    "category": "financial",
+    "subCategory": "banking",
+    "ministry": "Ministry of Finance",
+    "implementingAgency": "Department of Financial Services",
+    "targetPopulation": "unbanked individuals and low-income households",
+    "eligibilityCriteria": {
+      "ageRange": "any age",
+      "incomeRange": "no minimum income requirement",
+      "categories": ["financially excluded", "low-income"],
+      "residencyRequired": "Indian citizen",
+      "otherConditions": "No proof of income required; Aadhaar and mobile number recommended"
+    },
+    "benefits": [
+      {
+        "type": "bank account",
+        "description": "Zero-balance savings account with overdraft facility.",
+        "amount": "N/A",
+        "frequency": "one-time account opening",
+        "maxCoverage": "N/A"
+      },
+      {
+        "type": "debit card",
+        "description": "RuPay debit card for cash withdrawals and payments.",
+        "amount": "N/A",
+        "frequency": "one-time issuance",
+        "maxCoverage": "N/A"
+      },
+      {
+        "type": "insurance",
+        "description": "Accidental death cover of ₹2 lakh for account holders.",
+        "amount": "₹200000",
+        "frequency": "annual renewal via bank account",
+        "maxCoverage": "₹200000"
+      }
+    ],
+    "applicationProcess": {
+      "mode": ["offline", "online"],
+      "steps": [
+        "Visit a participating bank branch or official website",
+        "Submit identity and address documents",
+        "Complete account opening form",
+        "Receive RuPay card and passbook"
+      ],
+      "website": "https://pmjdy.gov.in/",
+      "contactNumber": "1800-11-5555"
+    },
+    "documentsRequired": [
+      {
+        "name": "Aadhaar card",
+        "optional": false,
+        "description": "Preferred for KYC verification."
+      },
+      {
+        "name": "Voter ID or passport",
+        "optional": true,
+        "description": "Alternative identity proof."
+      },
+      {
+        "name": "utility bill",
+        "optional": true,
+        "description": "Address proof if Aadhaar not available."
+      }
+    ],
+    "geography": {
+      "national": true,
+      "states": [],
+      "districts": []
+    },
+    "status": "active",
+    "launchDate": "2014-08-28",
+    "lastUpdated": "2026-07-10T00:00:00Z",
+    "tags": ["inclusion", "banking", "insurance", "low-income"],
+    "sourceUrl": "https://pmjdy.gov.in/"
+  },
+  {
+    "schemeId": "pmujjwala",
+    "name": "Pradhan Mantri Ujjwala Yojana",
+    "description": "Subsidy scheme to provide LPG connections to women from below poverty line households for clean cooking fuel.",
+    "category": "energy",
+    "subCategory": "clean cooking",
+    "ministry": "Ministry of Petroleum and Natural Gas",
+    "implementingAgency": "Food Safety and Standards Authority of India",
+    "targetPopulation": "women from BPL households",
+    "eligibilityCriteria": {
+      "ageRange": "18+",
+      "incomeRange": "below poverty line",
+      "categories": ["BPL", "women-headed households"],
+      "residencyRequired": "Indian citizen",
+      "otherConditions": "Household must not already have an LPG connection under beneficiary name"
+    },
+    "benefits": [
+      {
+        "type": "subsidy",
+        "description": "Partial subsidy for LPG connection and first refill.",
+        "amount": "₹1600 per connection",
+        "frequency": "once per new connection",
+        "maxCoverage": "₹1600"
+      },
+      {
+        "type": "service",
+        "description": "Access to clean cooking fuel via LPG cylinder delivery network.",
+        "amount": "N/A",
+        "frequency": "ongoing refill eligibility",
+        "maxCoverage": "N/A"
+      }
+    ],
+    "applicationProcess": {
+      "mode": ["offline", "online"],
+      "steps": [
+        "Apply at authorized LPG distributor or state portal",
+        "Submit proof of identity and BPL status",
+        "Receive sanctioned connection and subsidy",
+        "Activate first LPG cylinder delivery"
+      ],
+      "website": "https://www.pmujjwala2.yojana.gov.in/",
+      "contactNumber": "1800-123-547"
+    },
+    "documentsRequired": [
+      {
+        "name": "BPL card",
+        "optional": false,
+        "description": "Proof of eligibility."
+      },
+      {
+        "name": "Aadhaar card",
+        "optional": false,
+        "description": "Identity proof."
+      },
+      {
+        "name": "Ration card",
+        "optional": true,
+        "description": "Additional proof of household details."
+      }
+    ],
+    "geography": {
+      "national": true,
+      "states": [],
+      "districts": []
+    },
+    "status": "active",
+    "launchDate": "2016-05-01",
+    "lastUpdated": "2026-07-10T00:00:00Z",
+    "tags": ["energy", "women", "health", "clean cooking"],
+    "sourceUrl": "https://www.pmujjwala2.yojana.gov.in/"
+  },
+  {
+    "schemeId": "abpmjay",
+    "name": "Ayushman Bharat Pradhan Mantri Jan Arogya Yojana",
+    "description": "Health insurance scheme providing secondary and tertiary hospitalization coverage to vulnerable families.",
+    "category": "health",
+    "subCategory": "insurance",
+    "ministry": "Ministry of Health and Family Welfare",
+    "implementingAgency": "National Health Agency",
+    "targetPopulation": "poor and vulnerable families",
+    "eligibilityCriteria": {
+      "ageRange": "all ages",
+      "incomeRange": "eligible families identified by socio-economic criteria",
+      "categories": ["poor", "vulnerable", "rural households"],
+      "residencyRequired": "Indian citizen",
+      "otherConditions": "Family must be listed in eligible socio-economic database"
+    },
+    "benefits": [
+      {
+        "type": "insurance",
+        "description": "Cashless hospitalization coverage for approved medical procedures.",
+        "amount": "₹5 lakh per family per year",
+        "frequency": "annual",
+        "maxCoverage": "₹500000"
+      },
+      {
+        "type": "service",
+        "description": "Access to empanelled public and private hospitals.",
+        "amount": "N/A",
+        "frequency": "ongoing",
+        "maxCoverage": "N/A"
+      }
+    ],
+    "applicationProcess": {
+      "mode": ["offline"],
+      "steps": [
+        "Check eligibility using SECC or state list",
+        "Apply through local health center or Jan Aadhaar center",
+        "Obtain golden card or beneficiary ID",
+        "Visit empanelled hospital for cashless treatment"
+      ],
+      "website": "https://pmjay.gov.in/",
+      "contactNumber": "14555"
+    },
+    "documentsRequired": [
+      {
+        "name": "Aadhaar card",
+        "optional": false,
+        "description": "Primary identity document."
+      },
+      {
+        "name": "Ration card",
+        "optional": false,
+        "description": "Proof of family composition."
+      },
+      {
+        "name": "BPL card",
+        "optional": true,
+        "description": "Additional eligibility support."
+      }
+    ],
+    "geography": {
+      "national": true,
+      "states": [],
+      "districts": []
+    },
+    "status": "active",
+    "launchDate": "2018-09-23",
+    "lastUpdated": "2026-07-10T00:00:00Z",
+    "tags": ["health", "insurance", "hospitalization", "vulnerable"],
+    "sourceUrl": "https://pmjay.gov.in/"
+  }
+]

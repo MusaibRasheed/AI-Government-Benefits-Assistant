@@ -1,0 +1,180 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GovernmentScheme",
+  "type": "object",
+  "required": ["schemeId", "name", "description", "category", "ministry", "status", "launchDate"],
+  "properties": {
+    "schemeId": {
+      "type": "string",
+      "description": "Unique canonical identifier for the scheme."
+    },
+    "name": {
+      "type": "string",
+      "description": "Official scheme name."
+    },
+    "description": {
+      "type": "string",
+      "description": "Brief summary of scheme purpose and scope."
+    },
+    "category": {
+      "type": "string",
+      "description": "Primary scheme category, e.g. 'financial', 'health', 'energy', 'social'."
+    },
+    "subCategory": {
+      "type": "string",
+      "description": "Optional finer-grained classification within the category."
+    },
+    "ministry": {
+      "type": "string",
+      "description": "Implementing ministry or department."
+    },
+    "implementingAgency": {
+      "type": "string",
+      "description": "Agency responsible for execution."
+    },
+    "targetPopulation": {
+      "type": "string",
+      "description": "High-level target group, e.g. 'women', 'rural households', 'senior citizens'."
+    },
+    "eligibilityCriteria": {
+      "type": "object",
+      "properties": {
+        "ageRange": {
+          "type": "string",
+          "description": "Age eligibility range, when applicable."
+        },
+        "incomeRange": {
+          "type": "string",
+          "description": "Income eligibility threshold or band."
+        },
+        "categories": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Applicable beneficiary categories, e.g. 'BPL', 'SC/ST', 'migrant worker'."
+        },
+        "residencyRequired": {
+          "type": "string",
+          "description": "Residency requirement, e.g. 'Indian citizen', 'resident of specified state'."
+        },
+        "otherConditions": {
+          "type": "string",
+          "description": "Any additional eligibility conditions."
+        }
+      },
+      "additionalProperties": false
+    },
+    "benefits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "description"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "Benefit type, e.g. 'cash', 'subsidy', 'insurance', 'service'."
+          },
+          "description": {
+            "type": "string",
+            "description": "What the beneficiary receives."
+          },
+          "amount": {
+            "type": "string",
+            "description": "Monetary amount or value description."
+          },
+          "frequency": {
+            "type": "string",
+            "description": "Payment or benefit frequency."
+          },
+          "maxCoverage": {
+            "type": "string",
+            "description": "Maximum coverage for the benefit, if applicable."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "applicationProcess": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Application channels, e.g. 'online', 'offline', 'both'."
+        },
+        "steps": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "High-level step-by-step process."
+        },
+        "website": {
+          "type": "string",
+          "format": "uri",
+          "description": "Official application or information URL."
+        },
+        "contactNumber": {
+          "type": "string",
+          "description": "Helpdesk or support phone number."
+        }
+      },
+      "additionalProperties": false
+    },
+    "documentsRequired": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "optional": { "type": "boolean" },
+          "description": { "type": "string" }
+        },
+        "required": ["name"],
+        "additionalProperties": false
+      }
+    },
+    "geography": {
+      "type": "object",
+      "properties": {
+        "national": { "type": "boolean" },
+        "states": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "districts": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "closed", "paused", "draft"],
+      "description": "Current operational status."
+    },
+    "launchDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Official launch date."
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last data update timestamp."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Search-friendly tags."
+    },
+    "sourceUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Authoritative reference URL."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional internal notes for maintainers."
+    }
+  },
+  "additionalProperties": false
+}

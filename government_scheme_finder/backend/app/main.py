@@ -2,11 +2,14 @@
 
 from fastapi import FastAPI
 
+from app.api.schemes import router as schemes_router
 
 app = FastAPI(
     title="Government Scheme Finder API",
     version="0.1.0",
 )
+
+app.include_router(schemes_router)
 
 
 @app.get("/")
